@@ -11,19 +11,19 @@ Cake is not so much a 'thing' but more of an approach to building highly reusabl
 
 ## Anatomy of a Cake component
 
-1. Base
+### 1. Base
 Just like any good cake base recipe this should never change once perfected. The base of a Cake Component should be semantically correct, accessible and not include extra markup to achieve bespoke design requirements. The base is the foundation to which we apply the rest of the ingredients on top of.
 
 ```
 [component-name].base.html
 ```
 
-2. Filling
+### 2. Filling
 ```
 [component-name].filling.js
 ```
 
-3. Sprinkles
+### 3. Sprinkles
 ```
 [component-name].sprinkles.css
 ```
