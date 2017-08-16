@@ -30,16 +30,19 @@ Just like any good cake base recipe, this should never be changed once perfected
 
 #### Example structure
 
+##### HTML
 ```
 [component-name].base.html
 ```
 The `base.html` file should contain the semantic html structure of your component template. This does not necessarily have to be contained within a seperate `.html` file, in the case of [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) this template would be generated within a `.js` or `.jsx` file.
 
+##### JavaScript
 ```
 [component-name].base.js
 ```
 The `base.js` file should contain the minimal amount of javascript required to make your component operational and achieve accessibilty requirements. Again, this file is not neccessarily required.
 
+##### CSS
 ```
 [component-name].base.css
 ```
