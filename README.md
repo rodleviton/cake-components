@@ -10,13 +10,18 @@ TODO distinguish between types of components
 ## What is Cake?
 Cake is not so much a 'thing' but more of an approach to building highly reusable, semantic and easily themeable components.
 
-Cake Component Development Cycle
-
-1. Source should be the same irrespective of consuming framework. Components should be built using a well defined, agreed upon common api.
-
 ```
-source -> compiler (based on consuming framework) -> output
+source -> compile (based on consuming framework) -> output
 ```
+
+### 1. Source
+The underlying source of a component should be the same irrespective of consuming framework. Components should be built using a well defined, agreed upon common api.
+
+### 2. Compile
+This can be thought of as the 'middleman'. Both the __Source__ and __Output__ should be the same no matter what the framework and the compile/build step is what makes this possible. Whether your project is using [Angular](https://angularjs.org/), [React](https://facebook.github.io/react/), [Vue](https://vuejs.org/)... The __Compile__ step should alow you to translate the __Source__ into a common __Output__.
+
+### 3. Output
+
 
 ## Anatomy of a Cake component
 The following prescribes a default list of ingredients that go into building a Cake Component. Your specific implementation may vary (e.g. structure, naming conventions...), but the end goal is the same: 'build once, build it right, use everywhere'.
@@ -71,8 +76,10 @@ sprinkles
 ```
 [component-name].sprinkles.js
 ```
+The `sprinkles.js` file should only contain visual and functionality enhancements for your component e.g. programatic animation sequence.
 
 ##### CSS
 ```
 [component-name].sprinkles.css
 ```
+The `sprinkles.css` file should contain theme specific styles e.g. colours, borders, padding etc.
